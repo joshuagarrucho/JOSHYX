@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSHYX Register</title>
+  <link rel="stylesheet" href="../login/styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">JOSHYX</div>
+  <div class="page-shell auth-shell">
+    <header class="site-header">
+      <a class="brand" href="../Home/index.html">Joshyx</a>
+      <nav class="header-actions">
+        <a href="../Home/index.html">Home</a>
+        <a href="../login/index.html">Login</a>
+      </nav>
+    </header>
+
+    <main class="auth-page">
+      <section class="collection-head">
+        <div>
+          <p class="section-label">Create account</p>
+          <h1>Start your JOSHYX session</h1>
+          <p>Register with an email and password, then sign in to keep your browser account ready for the next drop.</p>
+        </div>
+      </section>
+
+      <section class="products">
+        <article class="product-card">
+          <form id="registerForm" novalidate>
+            <label class="field">
+              <span>Full name</span>
+              <input id="fullName" name="fullName" type="text" placeholder="Alex Moran" autocomplete="name" required>
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input id="email" name="email" type="email" placeholder="joshyx@example.com" autocomplete="email" required>
+            </label>
+
+            <label class="field">
+              <span>Password</span>
+              <input id="password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" required>
+            </label>
+
+            <label class="field">
+              <span>Confirm password</span>
+              <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Repeat your password" autocomplete="new-password" required>
+            </label>
+
+            <label class="field">
+              <span>Preferred region</span>
+              <select id="region" name="region">
+                <option value="North America">North America</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <button class="btn-buy" type="submit">Create account</button>
+            <p id="statusMessage" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="field-note">
+            Already registered? <a class="footer-link" href="../login/index.html">Sign in instead</a>.
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

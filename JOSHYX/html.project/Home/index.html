@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshyx</title>
+  <meta name="description" content="Joshyx minimalist clothing brand storefront.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="./img/Gemini_Generated_Image_qqaenmqqaenmqqae.png" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">JOSHYX</div>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="header-nav header-nav-left" id="site-nav">
+        <a href="#products">New Arrivals</a>
+        <a href="#products">Essentials</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="brand" href="#top" aria-label="Joshyx home">Joshyx</a>
+
+      <nav class="header-actions">
+        <div class="search-wrapper">
+          <input type="text" class="search-input" placeholder="Search items...">
+          <button class="search-trigger">Search</button>
+        </div>
+        <button id="cart-toggle" type="button" aria-expanded="false" class="cart-button">
+          Cart <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="collection-head">
+        <div>
+          <p class="section-label">Collection</p>
+          <h1>New Arrivals</h1>
+        </div>
+
+        <div class="filter-row" aria-label="Filter collection">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="tops" aria-pressed="false">Tops</button>
+          <button class="filter-btn" type="button" data-filter="bottoms" aria-pressed="false">Bottoms</button>
+          <button class="filter-btn" type="button" data-filter="outerwear" aria-pressed="false">Outerwear</button>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <article class="product-card reveal" data-category="bottoms">
+          <div class="product-stage">
+            <a href="product.html?item=black-baggy-denim"></a>
+            <img src="img blac/Baggy denimk.jpg" alt="Black Baggy Denim">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Black Baggy Denim</p>
+            <p class="product-price">PHP 1,000</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=black-baggy-denim" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="bottoms">
+          <div class="product-stage">
+            <a href="product.html?item=black-sweatpants"></a>
+            <img src="img/Black Baggy Sweatpants.webp" alt="Black Baggy Sweatpants">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Black Baggy Sweatpants</p>
+            <p class="product-price">PHP 900</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=black-sweatpants" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="bottoms">
+          <div class="product-stage">
+            <a href="product.html?item=khaki-baggy-cargo-pants"></a>
+            <img src="img/Khaki Baggy Cargo Pants.png" alt="Khaki Baggy Cargo Pants">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Khaki Baggy Cargo Pants</p>
+            <p class="product-price">PHP 1,100</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=khaki-baggy-cargo-pants" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="tops">
+          <div class="product-stage">
+            <a href="product.html?item=ferrari-tee"></a>
+            <img src="img/Ferrari Tee T-Shirt.jpg" alt="Ferrari Tee T-Shirt">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Ferrari Tee T-Shirt</p>
+            <p class="product-price">PHP 900</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=ferrari-tee" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="tops">
+          <div class="product-stage">
+            <a href="product.html?item=sakura-tee"></a>
+            <img src="img/Sakura Tee T-Shirt.png" alt="Sakura Tee T-Shirt">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Sakura Tee T-Shirt</p>
+            <p class="product-price">PHP 900</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=sakura-tee" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="tops">
+          <div class="product-stage">
+            <a href="product.html?item=kaws-tee"></a>
+            <img src="img/Kaws Tee T-Shirt.png" alt="Kaws Tee T-Shirt">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Kaws Tee T-Shirt</p>
+            <p class="product-price">PHP 900</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=kaws-tee" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="outerwear">
+          <div class="product-stage">
+            <a href="product.html?item=oversized-quarter-zip-pullover"></a>
+            <img src="img/Oversized Quarter-Zip Pullover.avif" alt="Oversized Quarter-Zip Pullover">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Oversized Quarter-Zip Pullover</p>
+            <p class="product-price">PHP 2,000</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=oversized-quarter-zip-pullover" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="outerwear">
+          <div class="product-stage">
+            <a href="product.html?item=sweater-polo-shirt"></a>
+            <img src="img/Washable Milano Ribbed Skipper Polo Jumper.png" alt="Sweater Polo Shirt">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Sweater Polo Shirt</p>
+            <p class="product-price">PHP 2,300</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=sweater-polo-shirt" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="outerwear">
+          <div class="product-stage">
+            <a href="product.html?item=zip-up-blouson-jacket"></a>
+            <img src="img/Zip-Up Blouson Jacket.png" alt="Zip-Up Blouson Jacket">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Zip-Up Blouson Jacket</p>
+            <p class="product-price">PHP 2,500</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=zip-up-blouson-jacket" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="tops">
+          <div class="product-stage">
+            <a href="product.html?item=white-art-cat-tee"></a>
+            <img src="img/White Art Cat T-Shirt.jpg" alt="White Art Cat T-Shirt">
+          </div>
+          <div class="product-info">
+            <p class="product-name">White Art Cat T-Shirt</p>
+            <p class="product-price">PHP 900</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=white-art-cat-tee" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="outerwear">
+          <div class="product-stage">
+            <a href="product.html?item=green-oversized-hoodie"></a>
+            <img src="img/Green Oversized Hoodie.webp" alt="Green Oversized Hoodie">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Green Oversized Hoodie</p>
+            <p class="product-price">PHP 2,100</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=green-oversized-hoodie" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="bottoms">
+          <div class="product-stage">
+            <a href="product.html?item=grey-baggy-denim"></a>
+            <img src="img/baggy denim.webp" alt="Grey Baggy Denim">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Grey Baggy Denim</p>
+            <p class="product-price">PHP 1,000</p>
+          </div>
+          <div class="product-actions">
+            <a href="product.html?item=grey-baggy-denim" class="btn-buy">Buy</a>
+            <button class="btn-cart" type="button">Add to cart</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="bottom-strip">
+        <p>Minimal pieces for everyday wear.</p>
+        <form class="join-form" id="join-form" novalidate>
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email for updates">
+          <button type="submit">Join</button>
+        </form>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </section>
+
+      <footer class="site-footer">
+        <div class="page-shell footer-grid">
+          <div class="footer-brand">
+            <p class="footer-title">Joshyx</p>
+            <p>Minimal pieces crafted for everyday comfort and elevated essentials.</p>
+          </div>
+
+          <div class="footer-section">
+            <p class="footer-title">Shop</p>
+            <a class="footer-link" href="index.html">New Arrivals</a>
+            <a class="footer-link" href="about.html">About Us</a>
+            <a class="footer-link" href="faq.html">FAQ</a>
+          </div>
+
+          <div class="footer-section">
+            <p class="footer-title">Policies</p>
+            <a class="footer-link" href="return-policy.html">Return Policy</a>
+            <a class="footer-link" href="contact.html">Contact</a>
+          </div>
+
+          <div class="footer-section">
+            <p class="footer-title">Contact</p>
+            <p class="footer-text">joshyx@gmail.com</p>
+            <p class="footer-text">+63 912 345 6789</p>
+            <p class="footer-text">Zamboanga City, Philippines</p>
+          </div>
+        </div>
+        <div class="footer-note">© 2026 JOSHYX. Simple essentials, thoughtful returns, and fast answers.</div>
+      </footer>
+
+      <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="cart-drawer-panel">
+          <div class="cart-drawer-header">
+            <h2>Shopping Cart</h2>
+            <button id="cart-close" type="button" aria-label="Close cart">×</button>
+          </div>
+          <div class="cart-items" id="cart-items">
+            <p class="cart-empty">Your cart is empty.</p>
+          </div>
+          <div class="cart-actions">
+            <span class="cart-total" id="cart-total">Total: PHP 0</span>
+            <button class="btn-cart" id="cart-clear" type="button">Clear cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

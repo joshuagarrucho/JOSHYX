@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSHYX Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">JOSHYX</div>
+  <div class="page-shell auth-shell">
+    <header class="site-header">
+      <a class="brand" href="../Home/index.html">Joshyx</a>
+      <nav class="header-actions">
+        <a href="../Home/index.html">Home</a>
+        <a href="../register/index.html">Register</a>
+      </nav>
+    </header>
+
+    <main class="auth-page" style="padding: 2rem 0;">
+      <section class="collection-head" style="padding: 0;">
+        <div>
+          <p class="section-label">Member login</p>
+          <h1 style="margin-top: 0.5rem;">Welcome back</h1>
+          <p style="max-width: 520px; color: var(--muted);">Sign in to continue with your saved JOSHYX profile, access your checkout state, and keep your browser session ready for the next drop.</p>
+        </div>
+      </section>
+
+      <section class="products" style="display: block; gap: 0; padding: 0;">
+        <article class="product-card" style="padding: 2rem; border-radius: 32px; box-shadow: var(--shadow); background: #fff;">
+          <form id="loginForm" novalidate>
+            <label class="field" style="display: block; margin-bottom: 1rem;">
+              <span style="display: block; margin-bottom: 0.35rem; font-size: 0.9rem; color: var(--muted);">Email</span>
+              <input id="email" name="email" type="email" placeholder="joshyx@example.com" autocomplete="email" required style="width: 100%; padding: 0.95rem 1rem; border: 1px solid var(--line); border-radius: 16px;">
+            </label>
+
+            <label class="field" style="display: block; margin-bottom: 1rem;">
+              <span style="display: block; margin-bottom: 0.35rem; font-size: 0.9rem; color: var(--muted);">Password</span>
+              <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required style="width: 100%; padding: 0.95rem 1rem; border: 1px solid var(--line); border-radius: 16px;">
+            </label>
+
+            <label class="toggle-row" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <input id="rememberMe" name="rememberMe" type="checkbox" style="width: auto;">
+              <span style="color: var(--muted);">Remember this email in this browser</span>
+            </label>
+
+            <button class="btn-buy" type="submit" style="width: 100%; border-radius: 999px;">Sign in to JOSHYX</button>
+            <p id="statusMessage" class="form-message" role="status" aria-live="polite" style="margin-top: 1rem;"></p>
+          </form>
+
+          <p class="field-note" style="margin-top: 1.5rem; color: var(--muted);">
+            Need an account first? Create one on the <a class="footer-link" href="../register/index.html">register page</a>.
+          </p>
+
+          <section class="saved-section" aria-labelledby="sessionTitle" style="margin-top: 2rem;">
+            <div class="saved-header" style="margin-bottom: 0.75rem;">
+              <div>
+                <p class="micro-label">Session state</p>
+                <h3 id="sessionTitle" style="margin: 0;">Current preview</h3>
+              </div>
+            </div>
+            <div id="sessionPreview" class="saved-list"></div>
+          </section>
+
+          <section class="saved-section" aria-labelledby="memberListTitle" style="margin-top: 1.5rem;">
+            <div class="saved-header" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+              <div>
+                <p class="micro-label">Stored members</p>
+                <h3 id="memberListTitle" style="margin: 0;">Browser accounts</h3>
+              </div>
+              <button id="toggleMembers" class="btn-cart" type="button" style="padding: 0.75rem 1rem; border-radius: 999px;">Show members</button>
+            </div>
+            <div id="savedMembers" class="saved-list" hidden></div>
+          </section>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

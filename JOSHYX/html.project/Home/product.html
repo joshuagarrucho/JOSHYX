@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHYX Product</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="header-left">
+            <a href="index.html">New Arrivals</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="../login/index.html">Login</a>
+            <a href="../register/index.html">Register</a>
+        </nav>
+        <div class="header-center">
+            <h1>JOSHYX</h1>
+        </div>
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search items...">
+                <button>Search</button>
+            </div>
+            <button id="cart-toggle" type="button" aria-expanded="false" class="cart-button">
+              Cart <span id="cart-count" class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="product-container">
+        <div class="product-image">
+            <img id="product-image" src="" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title" id="product-title">Loading...</h1>
+            
+            <div class="price-container">
+                <span class="current-price" id="product-price">...</span>
+            </div>
+            
+            <p class="shipping-text">Shipping calculated at checkout.</p>
+
+            <div class="selector-section">
+                <p class="selector-label">Size</p>
+                <div class="size-buttons">
+                    <button class="size-btn active" type="button">S</button>
+                    <button class="size-btn" type="button">M</button>
+                    <button class="size-btn" type="button">L</button>
+                    <button class="size-btn" type="button">XL</button>
+                </div>
+            </div>
+
+            <div class="selector-section">
+                <p class="selector-label">Quantity</p>
+                <div class="quantity-wrapper">
+                    <button class="qty-btn" id="decrease" type="button">-</button>
+                    <input type="number" id="qty-input" value="1" min="1">
+                    <button class="qty-btn" id="increase" type="button">+</button>
+                </div>
+            </div>
+
+            <div class="product-actions">
+                <button type="button" class="btn-buy" id="buy-now-btn">Buy now</button>
+                <button class="btn-cart" id="product-add-to-cart" type="button">Add to cart</button>
+            </div>
+            <p class="purchase-message" id="purchase-message" aria-live="polite"></p>
+
+            <ul class="product-description" id="product-desc-list"></ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-shell footer-grid">
+            <div class="footer-brand">
+                <p class="footer-title">Joshyx</p>
+                <p>Minimal essentials made for easy everyday styling.</p>
+            </div>
+            <div class="footer-section">
+                <p class="footer-title">Shop</p>
+                <a class="footer-link" href="index.html">New Arrivals</a>
+                <a class="footer-link" href="about.html">About Us</a>
+                <a class="footer-link" href="faq.html">FAQ</a>
+                <a class="footer-link" href="../login/index.html">Login</a>
+                <a class="footer-link" href="../register/index.html">Register</a>
+            </div>
+            <div class="footer-section">
+                <p class="footer-title">Policies</p>
+                <a class="footer-link" href="return-policy.html">Return Policy</a>
+                <a class="footer-link" href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <p class="footer-title">Contact</p>
+                <p class="footer-text">hello@joshyx.com</p>
+                <p class="footer-text">+63 912 345 6789</p>
+                <p class="footer-text">Makati City, Philippines</p>
+            </div>
+        </div>
+        <div class="footer-note">© 2026 JOSHYX. Simple essentials, thoughtful returns, and fast answers.</div>
+    </footer>
+
+    <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer-panel">
+        <div class="cart-drawer-header">
+          <h2>Shopping Cart</h2>
+          <button id="cart-close" type="button" aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <p class="cart-empty">Your cart is empty.</p>
+        </div>
+        <div class="cart-actions">
+          <span class="cart-total" id="cart-total">Total: PHP 0</span>
+          <button class="btn-cart" id="cart-clear" type="button">Clear cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
